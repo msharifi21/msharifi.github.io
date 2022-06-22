@@ -73,12 +73,16 @@ h4 {
 /*header section*/
 .top_container {
   font-family: 'Poppins', sans-serif;
-  background-color: #d4e6e385;
+  background-color: #f4f4f8;
+  top: 0;
+  width: 100%;
+  position: fixed;
+  z-index: 5;
 }
 
 
 .custom_nav-container.navbar-expand-lg .navbar-nav .nav-link {
-  padding: 10px 20px;
+  padding: 8px 15px;
   color: #2618f0;
   text-transform: uppercase;
 }
@@ -114,7 +118,7 @@ a:focus {
 
 .custom_nav-container {
   z-index: 99999;
-  padding: 15px 0;
+  padding: 10px 0;
   
 }
 
@@ -156,12 +160,12 @@ a:focus {
 }
 
 .hero_section-container .hero_img-box {
-  width: 42%;
+  width: 40%;
   margin-top: 20px;
 }
 
 .hero_section-container .hero_img-box img {
-  width: 65%;
+  width: 50%;
   
 }
 
@@ -231,9 +235,11 @@ a:focus {
 
 .about_detail-box p {
   margin: 45px 0;
+  font-size: medium;
 }
 .hobby_detail-box {
   margin: 45px 0;
+  font-size: medium;
 }
 
 .hobby_img-box img {
@@ -245,6 +251,9 @@ a:focus {
 
 .story_img-box img {
   width: 30%;
+}
+.value_img-box img {
+  width: 20%;
 }
 
 ::marker {
@@ -333,30 +342,80 @@ a:focus {
 
 /* end Projects section */
 
-/* welcome section */
-.welcome_section {
+/* blot section */
+.blog_section {
 
-  background-color: #f8faf9;
+  background-color: white;
 }
 
-.welcome_container {
+.blog_container {
   padding: 100px 0;
 }
 
-.welcome_container>* {
+.blog_container>* {
   margin-bottom: 35px;
 }
 
-.welcome_container h4 {
+.blog_container h4 {
   font-weight: normal;
 }
 
-.welcome_container h4,
-.welcome_container p {
+.blog_container h4,
+.blog_container p {
   font-family: 'Poppins', sans-serif;
 }
 
-/* end welcome section */
+.cont {
+	max-width: 640px;
+	margin: 30px auto;
+	background: #fff;
+	border-radius: 8px;
+	padding: 20px;
+}
+
+.comment {
+	display: block;
+	transition: all 1s;
+}
+.commentClicked {
+	min-height: 0px;
+	border: 1px solid #eee;
+	border-radius: 5px;
+	padding: 5px 10px
+}
+
+.cont textarea {
+	width: 100%;
+	border: none;
+	background: #E8E8E8;
+	padding: 5px 10px;
+	height: 50%;
+	border-radius: 5px 5px 0px 0px;
+	border-bottom: 2px solid #016BA8;
+	transition: all 0.5s;
+	margin-top: 15px;
+}
+
+button.primaryContained {
+	background: #016ba8;
+	color: #fff;
+	padding: 10px 10px;
+	border: none;
+	margin-top: 0px;
+	cursor: pointer;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.25);
+	transition: 1s all;
+	font-size: 10px;
+	border-radius: 5px;
+}
+
+button.primaryContained:hover {
+	background: #9201A8;
+}
+
+/* end blog section */
 
 /* contact section */
 .contact_section .col-md-6 {
@@ -410,12 +469,7 @@ a:focus {
   padding-top: 60px;
   padding-bottom: 1px;
   color: rgb(10, 10, 10);
-  background-color: #d4e6e385;
-}
-
-.info_logo h2 {
-  color: #fddd33;
-  font-family: 'Poppins', sans-serif;
+  background-color: white;
 }
 
 .info_section .col-md-4 {
@@ -427,38 +481,14 @@ a:focus {
   text-transform: uppercase;
 }
 
-.info_news input {
-  border: none;
-  width: 80%;
-  height: 35px;
-  border-radius: 20px;
-  background-color: #fff;
-  outline: none;
-  padding-left: 20px;
-  margin-top: 15px;
-}
 
-.info_news input::placeholder {
-  opacity: .4;
-}
-
-.info_news button {
-  border: none;
-  background-color: #fddd33;
-  color: #fff;
-  text-transform: uppercase;
-  font-size: 14px;
-  padding: 7px 25px;
-  border-radius: 20px;
-  margin-top: 20px;
-}
-
-.info_address p {
-  margin-bottom: 5px;
-}
 
 .custom_border-btm {
-  border-bottom: 1px solid #fff;
+  border-bottom: 2px solid #e2e9eb;
+}
+
+.custom_border-btm1 {
+  border-bottom: 1px solid red;
 }
 
 .info_social {
@@ -466,7 +496,7 @@ a:focus {
   justify-content: space-between;
   width: 150px;
   margin: 30px auto;
-  box-shadow: #f8d92b;
+  box-shadow: #eecc0f;
 }
 
 /* end info section */
@@ -476,15 +506,19 @@ a:focus {
 /* footer section*/
 
 .footer_section {
-  background-color: #fdfdfe;
-  padding: 15px 10px;
+  background-color: #f4f4f8;
+  padding: 5px 13px;
   font-family: 'Poppins', sans-serif;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  position: fixed;
 }
 
 .footer_section p {
   color: #000;
-  margin: 1;
-  text-align: left;
+  margin: 0;
+  text-align: center;
 }
 
 .footer_section a {
