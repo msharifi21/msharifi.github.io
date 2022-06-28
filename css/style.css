@@ -263,7 +263,7 @@ a:focus {
   text-indent: 0px !important;
   text-align: start !important;
   text-align-last: start !important;
-  color: red; 
+  color: blue; 
 }
 
 /* end about section */
@@ -276,6 +276,7 @@ a:focus {
   padding-top: 15px;
   padding-bottom: 10px;
   
+  
 }
 
 .Projects_box {
@@ -286,6 +287,8 @@ a:focus {
   transform: translateY(0);
   transition: all .7s;
   padding-bottom: 50px;
+  
+  
 }
 
 .Projects_box:hover {
@@ -322,6 +325,11 @@ a:focus {
   text-align: left;
 }
 
+.Projects_detail-container{
+line-height: 2.5em;
+
+}
+
 .heading-text {
   padding: 0;
   margin: 0;
@@ -338,6 +346,7 @@ a:focus {
   border: solid orange;
   border-width: .1em .1em .1em .8em;
   padding: .2em .6em;
+  
 }
 
 /* end Projects section */

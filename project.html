@@ -11,8 +11,10 @@
   <meta name="keywords" content="" />
   <meta name="description" content="" />
   <meta name="author" content="" />
-  
+
   <title>Projects </title>
+
+
 
   <!-- bootstrap core css -->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
@@ -24,7 +26,11 @@
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
 
+
+
+
   <link rel="stylesheet" href="css/css-circular-prog-bar.css">
+
 
 </head>
 
@@ -65,8 +71,8 @@
 
   <!-- Project section -->
 <section class="Projects_section layout_padding">
-  <div class="container layout_padding">
-    <div class="d-flex flex-column">
+  <div class="container">
+    <div class="d-flex flex-column layout_padding">
       
       <!-- Project heading-->
       <h3 class="text-uppercase">
@@ -82,136 +88,274 @@
     </p>
      
     <div class="Projects_detail">
+      <div class="Projects_detail-container"> 
       <p>
-        I used Spring Boot Actuator, Maven, Tomcat Server, Eclipse IDE, and Java to build a Web Application. 
-        Also, I have written a program in Java using different methods demonstrating the core concept of Object-Oriented Programming. 
+        <h5> I used Spring Boot Actuator, Maven, Tomcat Server, Eclipse IDE, and Java to build a Web Application. <br>
+          The project is made of the following elements: </h5>
+        <ul>
+          <li>index.html: to open the app in a web browser. I have used my website which it the app launches my website first </li>
+          <li>Contact.JSP: to store the content   <a href= "/list_contact"> Click here to see the content! </a> </a> </li>
+          <li>WebApplication.java: is the main class to run the program </li>
+          <li>ContactBusiness.java: to add Content to the JSP file </li>
+          <li>Contact.java: is the class with the getters and sitters </li>
+          <li>AppController.java: is the class to navigate and map </li>
+        </ul>
       </p>
-      
+      </div>
+  
+      <p> </p>
+      <h5> The main class (WebApplication.java) </h5>
       <div class="style">
         <pre> 
-          package com.webApp;
+          package tech.msharifi;
 
           import org.springframework.boot.SpringApplication;
           import org.springframework.boot.autoconfigure.SpringBootApplication;
-          
+
           @SpringBootApplication
           public class WebApplication {
-          
+
             public static void main(String[] args) {
-              SpringApplication.run(WebApplication.class, args);
-            }          
+            SpringApplication.run(WebApplication.class, args);
+            }
           }
         </pre>
         </div>
-         
 
-      <!-- the second project details -->
-      <p> <h4> 
-        Web Site
-        </h4>
-        <img src="images/Mustafa_Web.png" alt="">   
-      </p>
-        
-       
-      <div class="Projects_detail">
-        <p>
-          I used Spring Boot Actuator, Maven, Tomcat Server, Eclipse IDE, and Java to build a Web Application. 
-          Also, I have written a program in Java using different methods demonstrating the core concept of Object-Oriented Programming. 
-        </p>
-
+        <p> </p>
+        <h5> The Contact business class to add content to the JSP file (ContactBusiness.java)</h5>
         <div class="style">
           <pre> 
-            package com.webApp;
-  
-            import org.springframework.boot.SpringApplication;
-            import org.springframework.boot.autoconfigure.SpringBootApplication;
-            
-            @SpringBootApplication
-            public class WebApplication {
-            
-              public static void main(String[] args) {
-                SpringApplication.run(WebApplication.class, args);
-              }          
-            }
+            package tech.msharifi.ContactBusiness;
+
+            import java.util.ArrayList;
+            import java.util.*;
+            import tech.msharifi.Contact.Contact;
+
+            public class ContactBusiness {
+
+              public List<Contact> getContactList() {
+                    List<Contact> listContact = new ArrayList<>();
+                    
+                    listContact.add(new Contact("Mustafa", "Sharifi", "msharifi21@hotmail.com", "(720) 401-6227"));
+                    
+                    return listContact;
+                }
+            } 
           </pre>
           </div>
 
-        <!-- the third project details -->
-        <p> <h4> 
-          Object-Oriented Programming
-          </h4>
-          <img src="images/Mustafa_OOP.png" alt="">   
-        </p>
-         
-        <div class="Projects_detail">
-          <p>
-            I used Spring Boot Actuator, Maven, Tomcat Server, Eclipse IDE, and Java to build a Web Application. 
-            Also, I have written a program in Java using different methods demonstrating the core concept of Object-Oriented Programming. 
-          </p>
-
+          <p> </p>
+          <h5>The Contact class with the getters and sitters (Contact.java)</h5>
           <div class="style">
             <pre> 
-              package com.webApp;
-    
-              import org.springframework.boot.SpringApplication;
-              import org.springframework.boot.autoconfigure.SpringBootApplication;
-              
-              @SpringBootApplication
-              public class WebApplication {
-              
-                public static void main(String[] args) {
-                  SpringApplication.run(WebApplication.class, args);
-                }          
-              }
+              package tech.msharifi.Contact;
+                public class Contact {
+                      private String fname;
+                      private String lname;
+                      private String email;
+                      private String phoneNum;
+                  
+                      public Contact() {
+                          super();
+                      }                
+                      public Contact(String fname, String lname, String email, String phoneNum) {
+                          super();
+                          this.setFname(fname);
+                          this.setLname(lname);
+                          this.setEmail(email);
+                          this.setPhoneNum(phoneNum);
+                    }
+                    public String getFname() {
+                      return fname;
+                    }
+                    public void setFname(String fname) {
+                      this.fname = fname;
+                    }
+                    public String getLname() {
+                      return lname;
+                    }
+                    public void setLname(String lname) {
+                      this.lname = lname;
+                    }
+                    public String getEmail() {
+                      return email;
+                    }
+                    public void setEmail(String email) {
+                      this.email = email;
+                    }
+                    public String getPhoneNum() {
+                      return phoneNum;
+                    }
+                    public void setPhoneNum(String phoneNum) {
+                      this.phoneNum = phoneNum;
+                    }
+                }
             </pre>
             </div>
-      <p>
+
+            <p> </p> 
+            <h5>The Application Controller class to navigate and map the content (AppController.java) </h5> 
+            <div class="style">
+              <pre> 
+                package tech.msharifi.AppController;
+
+                import org.springframework.stereotype.Controller;
+                import org.springframework.ui.Model;
+                import org.springframework.web.bind.annotation.RequestMapping;
+                import java.util.*;
+                import tech.msharifi.Contact.Contact;
+                import tech.msharifi.ContactBusiness.ContactBusiness;
+                
+                @Controller
+                public class AppController {
+                     
+                    @RequestMapping("/list_contact")
+                    public String listContact(Model model) {
+                         
+                        ContactBusiness business = new ContactBusiness();
+                        List<Contact> contactList = business.getContactList();
+                         
+                        model.addAttribute("contacts", contactList);       
+                         
+                        return "contact";
+                    }
+                }
+              </pre>
+              </div>
+         
+              <p> </p> 
+              <h5>And finally, the JSP file  (contact.jsp) </h5> 
+              <div class="style">
+                <pre> 
+                  &lt%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+                      pageEncoding="ISO-8859-1"%&gt
+                  &lt%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %&gt   
+                  &lt!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+                      "http://www.w3.org/TR/html4/loose.dtd"&gt
+                  &lthtml&gt
+                  &lthead&gt
+                  &ltmeta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"&gt
+                  &lttitle&gtWeb Application &lt/title&gt
+                  &lt/head&gt
+                  &ltbody&gt
+                      &lth1 align="center"&gtMy Contact Info&lt/h1&gt
+                      &ltbr/&gt
+                      &lttable align="center" border="1" cellpadding="10"&gt
+                          &lttr&gt
+                              &ltth&gtFirst Name&lt/th&gt&ltth&gtLast Name&lt/th&gt&ltth&gtEmail&lt/th&gt&ltth&gtPhone Number&lt/th&gt
+                          &lt/tr&gt
+                          &ltc:forEach var="contact" items="${contacts}"&gt
+                          &lttr&gt
+                              &lttd&gt${contact.fname}&lt/td&gt
+                              &lttd&gt${contact.lname}&lt/td&gt
+                              &lttd&gt${contact.email}&lt/td&gt
+                              &lttd&gt${contact.phoneNum}&lt/td&gt
+                          &lt/tr&gt    
+                          &lt/c:forEach&gt
+                      &lt/table&gt
+                  &lt/body&gt
+                  &lt/html&gt
+                </pre>
+                </div>
+      <!-- the second project details -->
+
+          <p> <h4> 
+            OOPs
+            </h4>
+            <img src="images/Mustafa_OOP.png" alt="">   
+          </p>
+          
+          
+          <div class="Projects_detail-container"> 
+            <p>
+              <h5> I used Spring Boot Actuator, Maven, Tomcat Server, Eclipse IDE, and Java to build a Web Application. <br>
+                The project is made of the following elements: </h5>
+              <ul>
+                <li>index.html: to open the app in a web browser. I have used my website which it the app launches my website first </li>
+                <li>Contact.JSP: to store the content  </li>
+                <li>WebApplication.java: is the main class to run the program </li>
+                <li>ContactBusiness.java: to add Content to the JSP file </li>
+                <li>Contact.java: is the class with the getters and sitters </li>
+                <li>AppController.java: is the class to navigate and map </li>
+              </ul>
+            </p>
+            </div>
         
-      </p>
-      <div class="d-flex justify-content-center">
+            <p> </p>
+            <h5> The main class (WebApplication.java) </h5>
+            <div class="style">
+              <pre> 
+                package tech.msharifi;
+      
+                import org.springframework.boot.SpringApplication;
+                import org.springframework.boot.autoconfigure.SpringBootApplication;
+      
+                @SpringBootApplication
+                public class WebApplication {
+      
+                  public static void main(String[] args) {
+                  SpringApplication.run(WebApplication.class, args);
+                  }
+                }
+              </pre>
+              </div>
+
+        <!-- the third project details -->
+        <p> <h4> 
+          Website 
+          </h4>
+          <img src="images/Mustafa_Web.png" alt="">   
+        </p>
+   
+        <div class="Projects_detail">
+          <p>
+            More details here!  
+          </p>
+        </div>
+      </div>
+        <div class="d-flex justify-content-center">
           <a href="index.html" class="sub_call_to-btn ">
             <span>
               Home
             </span>
             <img src="images/right-arrow.png" alt="">
           </a>
-        </div>
-    </div>
+        </div>   
   </div>
 </section>
   <!-- end Projects section -->
 
- <!-- info section -->
+ <!-- info section --> 
  <section class="info_section">
   <div class="container ">
-    <div class="row custom_border-btm pb-4">
-      <div class="col-md-4 info_logo">
+    <div class="row custom_border-btm1 pb-4">
+      <div class="col-md-4">
         <h5>
-          Contact
-         </h5>
-         <p>
-           The best to contact me is via email
-         </p>
-       </div>
-       <div class="col-md-4 info_address">
-         <h5>
-           Email Address
-         </h5>
-         <p>
-           msharifi21@hotmail.com
-         </p>
-       </div>
-       <div class="col-md-4 info_news">
-         <h5>
-           Phone Number
-         </h5>
-         <p>
-           (720) 401-6227
-         </p>
-       </div>
-
+         Contact
+        </h5>
+        <p>
+          The best to contact me is via email
+        </p>
+      </div>
+      <div class="col-md-4">
+        <h5>
+          Email Address
+        </h5>
+        <p>
+          msharifi21@hotmail.com
+        </p>
+      </div>
+      <div class="col-md-4">
+        <h5>
+          Phone Number
+        </h5>
+        <p>
+          (720) 401-6227
+        </p>
+      </div>
     </div>
-
+  
     <div>
       <div class="info_social layout_padding-bottom">
         <div>
@@ -232,8 +376,9 @@
       </div>
     </div>
   </div>
-</section>
-<!-- endsss info section -->
+</section> 
+<!-- end info section -->
+
 
 <!-- footer section -->
 <section class="container-fluid footer_section">
