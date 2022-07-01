@@ -341,9 +341,13 @@ line-height: 2.5em;
   width: 100%;
 }
 
+.blog_section .row {
+  align-items: center;
+  margin: auto;
+}
+
 .blog_detail-box p {
   font-size: medium;
-  width: 100%;
 }
 
 .blog_img-box img {
