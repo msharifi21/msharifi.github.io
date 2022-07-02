@@ -71,57 +71,20 @@ h4 {
 
 
 /*header section*/
-.top_container {
+.header_section {
   font-family: 'Poppins', sans-serif;
   background-color: #f4f4f8;
   top: 0;
   width: 100%;
   position: fixed;
-  z-index: 5;
+  z-index: 1;
 }
 
 
-.custom_nav-container.navbar-expand-lg .navbar-nav .nav-link {
-  padding: 8px 15px;
+.header_section {
+  padding: 3px 15px;
   color: #2618f0;
   text-transform: uppercase;
-}
-
-a,
-a:hover,
-a:focus {
-  text-decoration: none;
-}
-
-a:hover,
-a:focus {
-  color: initial;
-}
-
-.btn,
-.btn:focus {
-  outline: none !important;
-  box-shadow: none;
-}
-
-.top_container.sub_page {
-  height: auto; 
-}
-
-.navbar-brand,
-.navbar-brand:hover {
-  font-size: 30px;
-  color: #2a1cf3;
-  font-weight: bold;
-}
-
-.custom_nav-container {
-  z-index: 99999;
-  padding: 10px 0; 
-}
-
-.custom_nav-container .navbar-toggler {
-  outline: none;
 }
 
 /*end header section*/

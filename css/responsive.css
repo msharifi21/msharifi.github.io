@@ -1,15 +1,7 @@
 @media (max-width: 1120px) {}
 
 @media (max-width: 992px) {
-    .custom_nav-container .nav_search-btn {
-        background-position: center;
-    }
-
-    .navbar-collapse {
-        padding-bottom: 20px;
-    }
-
-    .Projects_box {
+       .Projects_box {
         margin: 100px 15px 0 15px;
         padding-bottom: 20px;
         transition: all .5s;
@@ -24,9 +16,6 @@
         margin-top: 25px;
     }
 
-    .welcome_section::before {
-        display: none;
-    }
 }
 
 @media (max-width: 768px) {
@@ -34,10 +23,6 @@
     .info_section .col-md-4 {
         padding: 20px 30px;
         text-align: center;
-    }
-
-    .info_news input {
-        width: 100%;
     }
 
     .hero_section-container {
@@ -48,19 +33,7 @@
         padding-bottom: 125px;
     }
 
-    .contact_form-container {
-        padding: 20px;
     }
-
-    .contact_section input {
-        width: 100%;
-    }
-
-    .contact_img-box {
-        padding: 20px;
-    }
-
-}
 
 @media (max-width: 576px) {
     .hero_section-container {
