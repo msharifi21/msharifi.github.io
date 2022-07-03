@@ -6,11 +6,11 @@
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <!-- Mobile Metas -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <!-- Site Metas -->
-  <meta name="keywords" content="html, CSS, Portfolio, Project" />
-  <meta name="description" content="portfolio " />
-  <meta name="author" content="Mustafa Sharifi" />
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
 
   <title>Home </title>
 
@@ -21,52 +21,59 @@
   <!-- fonts style -->
   <link href="https://fonts.googleapis.com/css?family=Poppins:400,700|Roboto:400,700&display=swap" rel="stylesheet">
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&family=Noto+Serif&display=swap" rel="stylesheet">
+
   <!-- Custom styles for this website -->
   <link href="css/style.css" rel="stylesheet" />
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
 
+
+
+
   <link rel="stylesheet" href="css/css-circular-prog-bar.css">
 
-  <script type='text/javascript' src='https://code.jquery.com/jquery-1.12.0.min.js'></script>
 
 </head>
 
- <!-- body section -->
-
 <body>
- <!-- start header section -->
-  <section class=" header_section">
-    <nav class="navbar navbar-expand-lg">
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
-          <ul class="navbar-nav  ">
-            <li class="nav-item active">
-              <a class="nav-link" href="index.html"> Home </a>
-            </li>
-            <li class="nav-item ">
-              <a class="nav-link" href="about.html"> about </a>
-            </li>
+  <div class="top_container">
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container ">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
+              <ul class="navbar-nav  ">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html"> Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item ">
+                  <a class="nav-link" href="about.html"> about </a>
+                </li>
 
-            <li class="nav-item">
-              <a class="nav-link" href="project.html"> Projects </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="blog.html"> Blog </a>
-            </li>
-          </ul>
-          <form class="form-inline my-2 my-lg-0 ml-0 ml-lg-4 mb-3 mb-lg-0">
-            <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit"></button>
-          </form>
-        </div>
+                <li class="nav-item">
+                  <a class="nav-link" href="project.html"> Projects </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="blog.html"> Blog </a>
+                </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0 ml-0 ml-lg-4 mb-3 mb-lg-0">
+                <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit"></button>
+              </form>
+            </div>
+        </nav>
       </div>
-    </nav>
-  </section>
+    </header>
+  </div>
   <!-- end header section -->
 
   <!-- hero section start-->
-  <section class="hero_section layout_padding ">
-      <div class="hero_section-container layout_padding-bottom custom_border-btm ">
+  <section class="hero_section layout_padding">
+      <div class="hero_section-container ">
         <div class="hero_img-box">
           <img src="images/Mustafa.png" alt="">
         </div>
@@ -154,15 +161,14 @@
 
 
   <!-- about section -->
-  <section class="about_section">
+  <section class="about_section layout_padding">
     <div class="container">
-      <div class="row custom_border-btm layout_padding-bottom">
+      <div class="row">
         <div class="col-md-6">
-          <div class="about_img-box">
-            <img src="images/about.gif" alt="">
-          </div>
-        </div>
-          <div class="about_detail-box layout_padding">
+          <div class="about_detail-box">
+            <h3 class="text-uppercase">
+              About Me
+            </h3>
             <p>
               I’m passionate about technology and my interest has only increased. I’m looking for a career in tech that can challenge me, has room for me to grow, 
               and can help advance my skills in software development and engineering.
@@ -170,7 +176,7 @@
               I’m able to work in a team and individually. I enjoy solving complex problems and motivating others. 
               I’m also self-motivated, dependable, and a quick learner with great teamwork, problem-solving, and communication skills.
             </p>
-            <div class="d-flex justify-content-center layout_padding-top">
+            <div class="d-flex justify-content-center justify-content-sm-start">
                 <a href="about.html" class="sub_call_to-btn ">
                   <span>
                     Read More
@@ -179,6 +185,12 @@
                 </a>
               </div>
           </div>
+        </div>
+        <div class="col-md-6">
+          <div class="about_img-box">
+          <img src="images/about.gif" alt="">
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -187,14 +199,15 @@
 
 <!-- Project section -->
 <section class="Projects_section layout_padding2">
-  <div class="container layout_padding-bottom custom_border-btm">
-    <div class="d-flex flex-column align-items-center ">
+  <div class="container">
+    <div class="d-flex flex-column align-items-center">
       <h3 class="text-uppercase">
         PROJECTS
       </h3>
     </div>
     
     <div class="Projects_container">
+
       <a class="Projects_box" href="project.html">
         <div class="Projects_img-box">
           <img src="images/Mustafa_WebApp.png" alt="">
@@ -211,17 +224,18 @@
           <h4>  
             OOPs 
           </h4>
-        </a>
+        </a> 
+
 
         <a class="Projects_box" href="project.html">
           <div class="Projects_img-box">
             <img src="images/Mustafa_Web.png" alt="">
           </div>
             <h4>
-              Website                  
+              Website                   
             </h4>
           </a>
-
+     
       </div>
         
     <div class="Projects_detail">
@@ -243,48 +257,54 @@
 <!-- end Projects section -->
 
  <!-- blog section -->
- <section class="blog_section">
+ <section class="about_section layout_padding">
   <div class="container">
-    <div class="row layout_padding-bottom">
-      <div class="about_detail-box">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="about_detail-box">
+          <h3 class="text-uppercase">
+            blog
+          </h3>
+         
+          <p> 
+            <a href="blog.html">
+              <h4>
+                <ul> 
+                  <li>
+                    Welcome
+                  </li>
+                </ul>
+                
+              </h4>  
+            </a>
+
+            <a href="blog.html">
+              <h4>
+                <ul>
+                  <li> 
+                    Coming soon 
+                  </li>
+                </ul>
+                
+              </h4>
+            </a>
+          </p>
+          
+          <div class="d-flex justify-content-center justify-content-sm-start">
+            <a href="blog.html" class="sub_call_to-btn ">
+              <span>
+                Read More
+              </span>
+              <img src="images/right-arrow.png" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
       <div class="col-md-6">
         <div class="blog_img-box">
           <img src="images/blog.png" alt="">
         </div>
       </div>
-            <p> 
-              <a href="blog.html">
-                <h4>
-                  <ul> 
-                    <li>
-                      Welcome
-                    </li>
-                  </ul>
-                </h4>  
-              </a>
-            </p>
-
-            <p> 
-              <a href="blog.html">
-                <h4>
-                  <ul> 
-                    <li>
-                      Deep into the nature!
-                    </li>
-                  </ul>
-                </h4>  
-              </a>
-            </p>
-        </div>
-    </div>
-
-    <div class="d-flex justify-content-center layout_padding">
-      <a href="blog.html" class="sub_call_to-btn ">
-        <span>
-          Read More
-        </span>
-        <img src="images/right-arrow.png" alt="">
-      </a>
     </div>
   </div>
 </section>
@@ -293,8 +313,8 @@
  <!-- info section --> 
  <section class="info_section">
     <div class="container ">
-      <div class="row custom_border-btm1 pb-4">
-        <div class="col-md-4">
+      <div class="row custom_border-btm pb-4">
+        <div class="col-md-4 info_logo">
           <h5>
            Contact
           </h5>
@@ -302,7 +322,7 @@
             The best to contact me is via email
           </p>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 info_address">
           <h5>
             Email Address
           </h5>
@@ -310,7 +330,7 @@
             msharifi21@hotmail.com
           </p>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 info_news">
           <h5>
             Phone Number
           </h5>
@@ -344,17 +364,16 @@
   <!-- end info section -->
 
 <!-- footer section -->
-<section class="container-fluid footer_section">
-  <p>
-    Copyright &copy; 2022 msharifi.tech
-  </p>
-</section>
-<!-- footer section -->
+  <section class="container-fluid footer_section">
+    <p>
+      Copyright &copy; 2022 msharifi.tech
+    </p>
+  </section>
+  <!-- footer section -->
 
     <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.js"></script>
-
-  <!-- progreesbar script -->
+    <!-- progreesbar script -->
 
 </script>
 </body>

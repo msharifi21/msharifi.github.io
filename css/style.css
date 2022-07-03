@@ -71,20 +71,33 @@ h4 {
 
 
 /*header section*/
-.header_section {
-  font-family: 'Poppins', sans-serif;
-  background-color: #f4f4f8;
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: darkslategray;
+  overflow: hidden;
   top: 0;
+  right: 0;
   width: 100%;
   position: fixed;
-  z-index: 1;
+  z-index: 5;
 }
 
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: right;
+  display: block;
+  color: whitesmoke;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+ 
+}
 
-.header_section {
-  padding: 3px 15px;
-  color: #2618f0;
-  text-transform: uppercase;
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: lightgreen;
+  color: black;
 }
 
 /*end header section*/
@@ -162,15 +175,6 @@ h4 {
   background-color: #464646;
 }
 
-.carousel-control-prev {
-  background-image: url(../images/left-arrow.png);
-  left: 45px;
-}
-
-.carousel-control-next {
-  background-image: url(../images/right-arrow.png);
-  left: 95px;
-}
 
 /* end hero section */
 
@@ -247,7 +251,7 @@ h4 {
 }
 
 .Projects_box:hover .Projects_img-box {
-  background-color: #98dd60;
+  background-color: lightgreen;
 }
 
 .Projects_img-box {
@@ -326,17 +330,17 @@ line-height: 2.5em;
 .info_section {
   padding-top: 60px;
   padding-bottom: 1px;
-  color: rgb(10, 10, 10);
-  background-color: white;
-}
+  }
 
 .info_section .col-md-4 {
+  padding: 0px 0px 0px;
+  
 
-  padding: 0 30px;
 }
 
 .info_section .col-md-4 h5 {
   text-transform: uppercase;
+  align-items: center;
 }
 
 .custom_border-btm {
@@ -355,6 +359,18 @@ line-height: 2.5em;
   box-shadow: #eecc0f;
 }
 
+.info_social a {
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.info_social a:hover {
+  background-color: lightgreen;
+  color: black;
+}
+
 /* end info section */
 
 
@@ -362,7 +378,7 @@ line-height: 2.5em;
 /* footer section*/
 
 .footer_section {
-  background-color: #f4f4f8;
+  background-color: darkslategrey;
   padding: 5px 13px;
   font-family: 'Poppins', sans-serif;
   bottom: 0;
@@ -372,7 +388,7 @@ line-height: 2.5em;
 }
 
 .footer_section p {
-  color: #000;
+  color: whitesmoke;
   margin: 0;
   text-align: center;
 }
@@ -382,3 +398,4 @@ line-height: 2.5em;
 }
 
 /* end footer section*/
+
