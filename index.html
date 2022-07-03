@@ -8,72 +8,43 @@
   <!-- Mobile Metas -->
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <!-- Site Metas -->
-  <meta name="keywords" content="" />
-  <meta name="description" content="" />
-  <meta name="author" content="" />
+  <meta name="keywords" content="html, CSS, Portfolio, Project" />
+  <meta name="description" content="portfolio " />
+  <meta name="author" content="Mustafa Sharifi" />
 
   <title>Home </title>
 
-
-
-  <!-- bootstrap core css -->
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  
   <!-- fonts style -->
   <link href="https://fonts.googleapis.com/css?family=Poppins:400,700|Roboto:400,700&display=swap" rel="stylesheet">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&family=Noto+Serif&display=swap" rel="stylesheet">
-
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
   <!-- Custom styles for this website -->
   <link href="css/style.css" rel="stylesheet" />
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
 
+  </head>
 
-
-
-  <link rel="stylesheet" href="css/css-circular-prog-bar.css">
-
-
-</head>
+ <!-- body section -->
 
 <body>
-  <div class="top_container">
-    <!-- header section strats -->
-    <header class="header_section">
-      <div class="container-fluid">
-        <nav class="navbar navbar-expand-lg custom_nav-container ">
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
-              <ul class="navbar-nav  ">
-                <li class="nav-item active">
-                  <a class="nav-link" href="index.html"> Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item ">
-                  <a class="nav-link" href="about.html"> about </a>
-                </li>
-
-                <li class="nav-item">
-                  <a class="nav-link" href="project.html"> Projects </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="blog.html"> Blog </a>
-                </li>
-              </ul>
-              <form class="form-inline my-2 my-lg-0 ml-0 ml-lg-4 mb-3 mb-lg-0">
-                <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit"></button>
-              </form>
-            </div>
-        </nav>
-      </div>
-    </header>
-  </div>
+ <!-- start header section -->
+  <section class=" header_section">
+    <div class="topnav" id="myTopnav">
+      <a href="" ></a>
+      <a href="blog.html"> Blog</a>
+      <a href="project.html">Project</a>
+      <a href="about.html">About</a>
+      <a href="index.html">Home </a>
+    </div>
+  </section>
   <!-- end header section -->
 
   <!-- hero section start-->
-  <section class="hero_section layout_padding">
-      <div class="hero_section-container ">
+  <section class="hero_section layout_padding ">
+      <div class="hero_section-container layout_padding-bottom custom_border-btm ">
         <div class="hero_img-box">
           <img src="images/Mustafa.png" alt="">
         </div>
@@ -161,14 +132,15 @@
 
 
   <!-- about section -->
-  <section class="about_section layout_padding">
+  <section class="about_section">
     <div class="container">
-      <div class="row">
+      <div class="row custom_border-btm layout_padding-bottom">
         <div class="col-md-6">
-          <div class="about_detail-box">
-            <h3 class="text-uppercase">
-              About Me
-            </h3>
+          <div class="about_img-box">
+            <img src="images/about.gif" alt="">
+          </div>
+        </div>
+          <div class="about_detail-box layout_padding">
             <p>
               I’m passionate about technology and my interest has only increased. I’m looking for a career in tech that can challenge me, has room for me to grow, 
               and can help advance my skills in software development and engineering.
@@ -176,7 +148,7 @@
               I’m able to work in a team and individually. I enjoy solving complex problems and motivating others. 
               I’m also self-motivated, dependable, and a quick learner with great teamwork, problem-solving, and communication skills.
             </p>
-            <div class="d-flex justify-content-center justify-content-sm-start">
+            <div class="d-flex justify-content-center layout_padding-top">
                 <a href="about.html" class="sub_call_to-btn ">
                   <span>
                     Read More
@@ -185,12 +157,6 @@
                 </a>
               </div>
           </div>
-        </div>
-        <div class="col-md-6">
-          <div class="about_img-box">
-          <img src="images/about.gif" alt="">
-          </div>
-        </div>
       </div>
     </div>
   </section>
@@ -199,15 +165,14 @@
 
 <!-- Project section -->
 <section class="Projects_section layout_padding2">
-  <div class="container">
-    <div class="d-flex flex-column align-items-center">
+  <div class="container layout_padding-bottom custom_border-btm">
+    <div class="d-flex flex-column align-items-center ">
       <h3 class="text-uppercase">
         PROJECTS
       </h3>
     </div>
     
     <div class="Projects_container">
-
       <a class="Projects_box" href="project.html">
         <div class="Projects_img-box">
           <img src="images/Mustafa_WebApp.png" alt="">
@@ -224,18 +189,17 @@
           <h4>  
             OOPs 
           </h4>
-        </a> 
-
+        </a>
 
         <a class="Projects_box" href="project.html">
           <div class="Projects_img-box">
             <img src="images/Mustafa_Web.png" alt="">
           </div>
             <h4>
-              Website                   
+              Website                  
             </h4>
           </a>
-     
+
       </div>
         
     <div class="Projects_detail">
@@ -257,54 +221,48 @@
 <!-- end Projects section -->
 
  <!-- blog section -->
- <section class="about_section layout_padding">
+ <section class="blog_section">
   <div class="container">
-    <div class="row">
-      <div class="col-md-6">
-        <div class="about_detail-box">
-          <h3 class="text-uppercase">
-            blog
-          </h3>
-         
-          <p> 
-            <a href="blog.html">
-              <h4>
-                <ul> 
-                  <li>
-                    Welcome
-                  </li>
-                </ul>
-                
-              </h4>  
-            </a>
-
-            <a href="blog.html">
-              <h4>
-                <ul>
-                  <li> 
-                    Coming soon 
-                  </li>
-                </ul>
-                
-              </h4>
-            </a>
-          </p>
-          
-          <div class="d-flex justify-content-center justify-content-sm-start">
-            <a href="blog.html" class="sub_call_to-btn ">
-              <span>
-                Read More
-              </span>
-              <img src="images/right-arrow.png" alt="">
-            </a>
-          </div>
-        </div>
-      </div>
+    <div class="row layout_padding-bottom">
+      <div class="about_detail-box">
       <div class="col-md-6">
         <div class="blog_img-box">
           <img src="images/blog.png" alt="">
         </div>
       </div>
+            <p> 
+              <a href="blog.html">
+                <h4>
+                  <ul> 
+                    <li>
+                      Welcome
+                    </li>
+                  </ul>
+                </h4>  
+              </a>
+            </p>
+
+            <p> 
+              <a href="blog.html">
+                <h4>
+                  <ul> 
+                    <li>
+                      Deep into the nature!
+                    </li>
+                  </ul>
+                </h4>  
+              </a>
+            </p>
+        </div>
+    </div>
+
+    <div class="d-flex justify-content-center layout_padding">
+      <a href="blog.html" class="sub_call_to-btn ">
+        <span>
+          Read More
+        </span>
+        <img src="images/right-arrow.png" alt="">
+      </a>
     </div>
   </div>
 </section>
@@ -313,29 +271,29 @@
  <!-- info section --> 
  <section class="info_section">
     <div class="container ">
-      <div class="row custom_border-btm pb-4">
-        <div class="col-md-4 info_logo">
-          <h5>
-           Contact
+      <div class="row custom_border-btm1 pb-4">
+        <div class="col-md-4">
+          <h5 style="font-weight:bold;">
+           Would you like to connect? 
           </h5>
           <p>
-            The best to contact me is via email
+            Please shoot me an email: 
           </p>
         </div>
-        <div class="col-md-4 info_address">
+        <div class="col-md-4">
           <h5>
+            
+          </h5>
+          <p>
+            
+          </p>
+        </div>
+        <div class="col-md-4">
+          <h5 style="font-weight:bold;">
             Email Address
           </h5>
           <p>
-            msharifi21@hotmail.com
-          </p>
-        </div>
-        <div class="col-md-4 info_news">
-          <h5>
-            Phone Number
-          </h5>
-          <p>
-            (720) 401-6227
+            <a href="mailto: msharifi21@hotmail.com"> msharifi21@hotmail.com </a>
           </p>
         </div>
       </div>
@@ -364,16 +322,17 @@
   <!-- end info section -->
 
 <!-- footer section -->
-  <section class="container-fluid footer_section">
-    <p>
-      Copyright &copy; 2022 msharifi.tech
-    </p>
-  </section>
-  <!-- footer section -->
+<section class="container-fluid footer_section">
+  <p>
+    Copyright &copy; 2022 msharifi.tech
+  </p>
+</section>
+<!-- footer section -->
 
     <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.js"></script>
-    <!-- progreesbar script -->
+
+  <!-- progreesbar script -->
 
 </script>
 </body>
