@@ -286,6 +286,9 @@ line-height: 2.5em;
 .blog_detail-box p {
   font-size: medium;
 }
+.blog_img img{
+  width: 120%;
+}
 
 .img {
   float: left; 
