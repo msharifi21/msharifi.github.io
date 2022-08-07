@@ -287,8 +287,31 @@ line-height: 2.5em;
   font-size: medium;
 }
 
-.blog_img-box img {
-  width: 100%;
+.blog_img-box {
+  box-sizing: border-box;
+  margin: 8px -16px;
+  
+
+}
+.blog_img-box, 
+.about_img-box > .img {
+  padding: 8px;
+}
+.img {
+  float: left; 
+  width: 25%;
+  display: none;
+}
+
+.about_img-box:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+}
+.blog_img-box img:hover{
+box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
 }
 
 
