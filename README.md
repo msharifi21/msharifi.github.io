@@ -1,3 +1,6 @@
+# overview 
+After I graduated college, I decided to build my self a website, and make a place where other can learn more about me! Even though, it is not completed yet, but I am regularly working to improve it, add content and make it better. Because it provides more information about me, I decided to name it **Subjoinistic**
+
 # SUBJOINISTIC
 
 Personal static portfolio web site. 
