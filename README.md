@@ -7,7 +7,7 @@ Contains four pages: home, about, project and blog.
 Contains an overview of all pages and provide links to individual pages. 
 
 # About 
-Provide detail information such as (about me, my story, values, and Hobby). 
+Provide detail information such as (about me, my story, values, and hobby). 
 
 # Projects 
 Provide detail information about my projects. 
