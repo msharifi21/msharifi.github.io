@@ -1,4 +1,4 @@
-# msharifi21.github.io
+# msharifi.tech
 
 Personal static portfolio web site. 
 Contains four pages: home, about, project and blog. 
