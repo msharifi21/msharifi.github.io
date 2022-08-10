@@ -1,4 +1,4 @@
-# msharifi.tech
+# SUBJOINISTIC
 
 Personal static portfolio web site. 
 Contains four pages: home, about, project and blog.
@@ -9,7 +9,7 @@ Contains an overview of all pages and provide links to individual pages.
 # About 
 Provide detail information such as (about me, my story, values, and Hobby). 
 
-#Projects 
+# Projects 
 Provide detail information about my projects. 
 
 # Blog
