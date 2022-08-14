@@ -3,18 +3,18 @@ After I graduated from college, I decided to build myself a website, and make it
 
 ## [Subjoinistic](https://www.msharifi.tech/)
 
-A personal static portfolio web site that contains four pages: home, about, project and blog.
+A personal static portfolio website that contains four pages: home, about, project, and blog.
 
 ### Home 
-Contains an overview of all pages and provide links to individual pages. 
+Contains an overview of all pages and provides links to individual pages. 
 
 ### About 
-Provide detail information such as (about me, my story, values, and hobby). 
+Provides detailed information such as (about me, my story, values, and hobby).
 
 ### Projects 
-Provide detail information about my projects. 
+Provides detailed information about my projects.  
 
 ### Blog
-Provide detail information about my actives, interests and things I do out side of work.
+Provides detailed information about my activities, interests, and things I do outside of work.
 
 
